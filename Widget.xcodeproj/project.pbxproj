@@ -14,6 +14,8 @@
 		8F3EF8141B41656A0001EC32 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F3EF8131B41656A0001EC32 /* Images.xcassets */; };
 		8F3EF8171B41656A0001EC32 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F3EF8151B41656A0001EC32 /* LaunchScreen.xib */; };
 		8F3EF8231B41656A0001EC32 /* WidgetTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F3EF8221B41656A0001EC32 /* WidgetTests.m */; };
+		8F3EF8311B416DAC0001EC32 /* PackpinViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F3EF8301B416DAC0001EC32 /* PackpinViewController.m */; };
+		8F3EF8691B42CD150001EC32 /* PackpinCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F3EF8681B42CD150001EC32 /* PackpinCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,10 @@
 		8F3EF81C1B41656A0001EC32 /* WidgetTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WidgetTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F3EF8211B41656A0001EC32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8F3EF8221B41656A0001EC32 /* WidgetTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WidgetTests.m; sourceTree = "<group>"; };
+		8F3EF82F1B416DAC0001EC32 /* PackpinViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PackpinViewController.h; sourceTree = "<group>"; };
+		8F3EF8301B416DAC0001EC32 /* PackpinViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PackpinViewController.m; sourceTree = "<group>"; };
+		8F3EF8671B42CD150001EC32 /* PackpinCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PackpinCell.h; sourceTree = "<group>"; };
+		8F3EF8681B42CD150001EC32 /* PackpinCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PackpinCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +95,10 @@
 				8F3EF8131B41656A0001EC32 /* Images.xcassets */,
 				8F3EF8151B41656A0001EC32 /* LaunchScreen.xib */,
 				8F3EF8061B41656A0001EC32 /* Supporting Files */,
+				8F3EF82F1B416DAC0001EC32 /* PackpinViewController.h */,
+				8F3EF8301B416DAC0001EC32 /* PackpinViewController.m */,
+				8F3EF8671B42CD150001EC32 /* PackpinCell.h */,
+				8F3EF8681B42CD150001EC32 /* PackpinCell.m */,
 			);
 			path = Widget;
 			sourceTree = "<group>";
@@ -220,6 +230,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				8F3EF80F1B41656A0001EC32 /* ViewController.m in Sources */,
+				8F3EF8691B42CD150001EC32 /* PackpinCell.m in Sources */,
+				8F3EF8311B416DAC0001EC32 /* PackpinViewController.m in Sources */,
 				8F3EF80C1B41656A0001EC32 /* AppDelegate.m in Sources */,
 				8F3EF8091B41656A0001EC32 /* main.m in Sources */,
 			);
@@ -352,6 +364,7 @@
 				INFOPLIST_FILE = Widget/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -362,6 +375,7 @@
 				INFOPLIST_FILE = Widget/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

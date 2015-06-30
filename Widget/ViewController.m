@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "PackpinViewController.h"
 
 @interface ViewController ()
 
@@ -22,6 +23,19 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    PackpinViewController *vc = [segue destinationViewController];
+ 
+    NSArray* arr = [[segue identifier] componentsSeparatedByString: @"|"];
+    
+//    if ([arr class] == [PackpinViewController class]) {
+        [vc setTrackingCode:[arr objectAtIndex: 1]];
+        [vc setCarrierCode:[arr objectAtIndex: 0]];
+//    }
+    
 }
 
 @end
