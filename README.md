@@ -1,2 +1,2 @@
 # packpin-ios-widget
-Simple wxample of using Packpin tracking widget in IOS app
+Simple example of using Packpin tracking widget in IOS app
